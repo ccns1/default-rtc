@@ -115,13 +115,12 @@ connection.socketURL = '/';
 connection.socketMessageEvent = 'screen-sharing-demo';
 
 connection.session = {
-    audio: true,
     video: true
 };
 
 connection.sdpConstraints.mandatory = {
     OfferToReceiveAudio: false,
-    OfferToReceiveVideo: false
+    OfferToReceiveVideo: true
 };
 
 // https://www.rtcmulticonnection.org/docs/iceServers/
